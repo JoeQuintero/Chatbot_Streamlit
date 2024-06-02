@@ -1,4 +1,4 @@
-![Chatbot](https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/chatbot.png){width='100px'} 
+![](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png){width='100px'}
 #Quetzal-Bot
 ### Chatbot de atención escolar para estudiantes de nuevo ingreso en la UPIICSA.
 
