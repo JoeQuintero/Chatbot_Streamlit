@@ -1,3 +1,4 @@
+#<img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/chatbot.png" style="height: 60%; width:60%;"/></a>
 ### Chatbot de atención escolar para estudiantes de nuevo ingreso en la UPIICSA.
 
 ![https://github.com/mouredev](./mouredev_github_profile.png)
