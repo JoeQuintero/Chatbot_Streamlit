@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Chatbot</title>
-  <style>
-    .resized-image {
-      max-width: 50%;  /* Ajusta el tamaño de la imagen según sea necesario */
-      height: auto;
-    }
-  </style>
-</head>
-<body>
-
-<img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/chatbot.png" alt="Chatbot" class="resized-image">
-
-</body>
-</html>
-#Quetzal-Bot
 ### Chatbot de atención escolar para estudiantes de nuevo ingreso en la UPIICSA.
 
 ![https://github.com/mouredev](./mouredev_github_profile.png)
