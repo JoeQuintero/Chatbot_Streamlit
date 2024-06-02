@@ -12,7 +12,7 @@
         },
         {
             "tag":"despedida",
-            "patterns":["Adiós", "Hasta luego","bye"],
+            "patterns":["Adiós", "Hasta luego", "bye"],
             "responses":["Adiós, espero vernos pronto", "Hasta luego", "Ciao"]
         }
     ]
