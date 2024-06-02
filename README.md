@@ -1,5 +1,4 @@
 <a href=""><img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/chatbot.png" style="height: 12%; width:12%;"/></a>
-
 ## Quetzal-Bot
 ### Chatbot de atención escolar para estudiantes de nuevo ingreso en la UPIICSA, IPN.
 
