@@ -8,7 +8,6 @@ from keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('/home/josequintero/Desktop/Quetzal-Bot/src/intents.json', 'r', encoding='utf-8').read())
-
 words = pickle.load(open('/home/josequintero/Desktop/Quetzal-Bot/src/words.pkl', 'rb'))
 classes = pickle.load(open('/home/josequintero/Desktop/Quetzal-Bot/src/classes.pkl', 'rb'))
 model = load_model('/home/josequintero/Desktop/Quetzal-Bot/src/chatbot_model.h5')
@@ -30,7 +29,7 @@ def bag_of_words(sentence):
 def predict_class(sentence):
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]))[0]
-    ERROR_THRESHOLD = 0.25
+    ERROR_THRESHOLD = 0.5
     results = [[i,r] for i, r in enumerate (res) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
@@ -39,10 +38,24 @@ def predict_class(sentence):
     return return_list
 
 def get_response(intents_list, intents_json):
-    tag = intents_list[0]['intent']
-    list_of_intents = intents_json['intents']
-    for i in list_of_intents:
-        if i ['tag'] == tag:
-            result = random.choice(i['responses'])
-            break    
-    return result     
+    if not intents_list:
+        return "No hay intenciones disponibles"  # Manejo de caso donde intents_list está vacía
+    
+    responses = []
+    
+    for intent_info in intents_list:
+        tag = intent_info['intent']
+        
+        # Buscar la intención correspondiente en intents_json
+        for intent in intents_json['intents']:
+            if intent['tag'] == tag:
+                response = random.choice(intent['responses'])
+                responses.append(response)
+                break
+    
+    if responses:
+        result = random.choice(responses)
+    else:
+        result = "No hay respuestas disponibles para estas intenciones"
+    
+    return result

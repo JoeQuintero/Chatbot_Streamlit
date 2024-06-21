@@ -1,3 +1,5 @@
+#Para entrenar el modelo se ejecuta este archivo, no tiene configurado métricas
+#Para correr el programa streamlit run view.py   
 # Es necesario tener instalado nltk en python
 # Se instala con pip install ntlk/keras
 # Es necesario tener pip en el equipo, es un sistema de gestión de paquetes que se usa para instalar software
@@ -56,8 +58,8 @@ for doc in documents:
     pattern_words = doc[0]
     pattern_words = [lemmatizer.lemmatize(word.lower()) for word in pattern_words]
     for word in words:
-        #Crea una bolsa de palabras binarias para cada patrón
-        bag.append(1) if word in patterns else bag.append(0)
+    # Crea una bolsa de palabras binarias para cada patrón
+        bag.append(1) if word in pattern_words else bag.append(0)
     output_row = list (output_empty)
     #Crea un vector de salida con un 1 en la posición correspondiente a la etiqueta del intento
     output_row[classes.index(doc[1])] = 1

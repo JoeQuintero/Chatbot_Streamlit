@@ -2,18 +2,133 @@
     "intents":[
         {
             "tag":"saludo",
-            "patterns":["Hola", "Buenos días", "Buenas Tardes"],
-            "responses":["¡Hola!, ¿Cómo puedo ayudarte hoy?", "¿Qué tal?, ¿Qué es lo que necesitas?"]
+            "patterns":[
+                "Hola", 
+                "Buenos días", 
+                "Buenas Tardes"
+            ],
+            "responses":[
+                "¡Hola!, ¿Cómo puedo ayudarte hoy?", 
+                "¿Qué tal?, ¿Qué es lo que necesitas?"
+            ]
         },
         {
             "tag":"saludo_2",
-            "patterns":["¿Qué tal?", "Buenos"],
-            "responses":["¡Hola!, ¿Cómo puedo ayudarte hoy?", "¿Qué tal?, ¿Qué es lo que necesitasaaas?"]
+            "patterns":[
+                "¿Qué tal?", 
+                "Buenos"
+            ],
+            "responses":[
+                "¡Hola!, ¿Cómo puedo ayudarte hoy?", 
+                "¿Qué tal?, ¿Qué es lo que necesitasaaas?"
+            ]
         },
         {
             "tag":"despedida",
-            "patterns":["Adiós", "Hasta luego", "bye"],
-            "responses":["Adiós, espero vernos pronto", "Hasta luego", "Ciao"]
+            "patterns":[
+                "Adiós", 
+                "Hasta luego", 
+                "bye"
+            ],
+            "responses":[
+                "Adiós, espero vernos pronto", 
+                "Hasta luego", 
+                "Ciao"
+            ]
+        },
+        {
+            "tag":"presentacion",
+            "patterns":[
+              "Soy Bard",
+              "Hola, soy Bard",
+              "Me presento, soy Bard"
+            ],
+            "responses":[
+              "¡Hola! Soy Bard, tu chatbot de inteligencia artificial. Estoy aquí para ayudarte en lo que necesites. ¿En qué puedo servirte hoy?",
+              "Encantado de conocerte. Soy Bard, un chatbot entrenado para ser informativo y completo. ¿Qué te gustaría saber o hacer hoy?",
+              "¡Hola! Soy Bard, tu asistente virtual. ¿Cómo puedo ayudarte a hacer tu día más fácil?"
+            ]
+        },
+        {
+            "tag":"agradecimiento",
+            "patterns":[
+              "Gracias",
+              "Muchas gracias",
+              "Te agradezco"
+            ],
+            "responses":[
+              "¡De nada! Me alegra poder ayudar.",
+              "No hay problema, estoy aquí para servirte.",
+              "¡Es un placer! Avísame si necesitas algo más."
+            ]
+        },
+        {
+            "tag":"disculpa",
+            "patterns":[
+              "Lo siento",
+              "Disculpa",
+              "Perdón"
+            ],
+            "responses":[
+              "No te preocupes, todos cometemos errores. ¿Cómo puedo ayudarte a solucionarlo?",
+              "Lo siento mucho por las molestias. Haré todo lo posible para corregirlo.",
+              "No hay problema, estoy aquí para ayudarte. ¿Qué te gustaría hacer ahora?"
+            ]
+        },
+        {
+            "tag":"autocritica",
+            "patterns":[
+              "No lo sé",
+              "No estoy seguro",
+              "No puedo ayudarte con eso"
+            ],
+            "responses":[
+              "Todavía estoy aprendiendo y no siempre tengo todas las respuestas. ¿Te gustaría que intentara buscar más información?",
+              "Lo siento, pero aún no he sido entrenado para manejar ese tipo de solicitud. ¿Te gustaría que intentara algo diferente?",
+              "Estoy en ello, pero todavía necesito más datos para poder ayudarte con eso. ¿Podrías proporcionarme más información?"
+            ]
+        },
+        {
+            "tag":"definicion",
+            "patterns":[
+              "¿Qué significa [palabra]?",
+              "Define [palabra]",
+              "Significado de [palabra]"
+            ],
+            "responses":[
+              "[Palabra] significa [definición]. ¿Hay algo más en lo que pueda ayudarte?",
+              "Según mi conocimiento, [palabra] se define como [definición]. ¿Te gustaría saber más sobre [palabra]?",
+              "La palabra [palabra] tiene varios significados. ¿Podrías especificar en qué contexto la estás utilizando para poder darte una definición más precisa?"
+            ]
+        },
+        {
+            "tag":"explicacion",
+            "patterns":[
+              "¿Cómo funciona [proceso]?",
+              "Explica [proceso]",
+              "Dime cómo funciona [cosa]"
+            ],
+            "responses":[
+              "[Proceso] funciona de la siguiente manera: [explicación detallada del proceso]. ¿Hay algo más que te gustaría saber sobre [proceso]?",
+              "[Cosa] funciona así: [explicación detallada de la cosa]. ¿Te gustaría saber más sobre un aspecto específico de [cosa]?",
+              "Para explicarte mejor [proceso], necesito más información sobre el contexto en el que lo estás utilizando. ¿Podrías proporcionarme más detalles?"
+            ]
+        },
+        {
+            "tag":"ejemplos",
+            "patterns":[
+              "Dame un ejemplo de [uso]",
+              "Ejemplos de [uso]",
+              "¿Cómo se usa [cosa]?"
+            ],
+            "responses":[
+              "Aquí hay un ejemplo de cómo se puede usar [uso]: [ejemplo detallado]. ¿Te gustaría ver más ejemplos?",
+              "Un ejemplo de cómo se puede usar [cosa] es [ejemplo detallado]. ¿Hay alguna otra aplicación de [cosa] que te gustaría conocer?",
+              "Para darte ejemplos más relevantes, necesito saber en qué contexto quieres usar [cosa]. ¿Podrías proporcionarme más información?"
+            ]
         }
+
     ]
 }
+
+  
