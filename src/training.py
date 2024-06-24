@@ -11,12 +11,8 @@ from nltk.stem import WordNetLemmatizer
 import json
 import pickle
 import numpy as np
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
-from keras.optimizers import SGD
-from keras.optimizers.schedules import ExponentialDecay
+import tensorflow as tf
 import random
-
 
 data_file = open('/home/josequintero/Desktop/Quetzal-Bot/src/intents.json', 'r', encoding='utf-8').read()
 intents = json.loads(data_file)
@@ -76,20 +72,20 @@ train_x = np.array(train_x)
 train_y = np.array(train_y)
 
 #Crea red neuronal
-model = Sequential()
-model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(64, activation ='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(len(train_y[0]),activation='softmax'))
+model = tf.keras.models.Sequential()
+model.add(tf.keras.layers.Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
+model.add(tf.keras.layers.Dropout(0.5))
+model.add(tf.keras.layers.Dense(64, activation ='relu'))
+model.add(tf.keras.layers.Dropout(0.5))
+model.add(tf.keras.layers.Dense(len(train_y[0]),activation='softmax'))
 
 #Configura el optimizador con una tasa de aprendizaje exponencialmente decreciente
-lr_schedule = ExponentialDecay(
+lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
     initial_learning_rate=0.01,
     decay_steps=10000,
     decay_rate=0.9)
 
-sgd = SGD(learning_rate = lr_schedule, momentum=0.9,nesterov=True)
+sgd = tf.keras.optimizers.SGD(learning_rate = lr_schedule, momentum=0.9,nesterov=True)
 model.compile(loss='categorical_crossentropy',optimizer=sgd, metrics=['accuracy'])
 
 #Entrena el modelo con el conjunto de entrenamiento
