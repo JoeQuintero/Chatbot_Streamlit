@@ -3,6 +3,10 @@ import streamlit as st
 import os
 from controller_chatbot import predict_class, get_response, intents
 from streamlit_option_menu import option_menu
+import nltk
+
+# Descargar el recurso 'punkt' si no está disponible
+nltk.download('punkt')
 
 #FRONT_END
 #------------------------------------------------------------------------------------------------
