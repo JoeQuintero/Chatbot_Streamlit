@@ -4,6 +4,4 @@ numpy
 streamlit
 streamlit_option_menu
 tensorflow
-json
-pickle
 
