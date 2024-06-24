@@ -1,0 +1,53 @@
+
+[data-testid="stSidebarContent"] {
+    background-color: #760a34   
+}
+
+[data-testid="stHeader"] {
+    background-color: #900C3F 
+}
+
+h1 {
+  color: #8c8a8a;
+  font-family: "Times New Roman", Times, serif;
+}
+
+[class="st-emotion-cache-uhkwx6 ea3mdgi6"]{
+    background-color: #900C3F 
+}
+
+span {
+  color: #8c8a8a;
+  font-family: "Tahoma", sans-serif;
+}
+
+[data-testid="baseButton-header"] {
+    background-color: #ffffff 
+} 
+
+[data-testid="chatAvatarIcon-user"]{
+    background-color: rgba(42, 133, 42, 0.678);
+}
+
+[data-testid="chatAvatarIcon-assistant"]{
+    background-color: #760a34;
+}
+
+
+[data-testid="stVerticalBlock"]{
+    background-color: white;
+    border-radius: 10px;
+}
+
+[data-testid="baseButton-headerNoPadding"] {
+    background-color: #ffffff 
+} 
+
+.st-emotion-cache-1629p8f.e1nzilvr2 {
+    background-color: #e9e4e485; /* Cambia este color al que prefieras */
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
