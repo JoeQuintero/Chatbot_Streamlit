@@ -15,6 +15,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(current_dir, 'intents.json')
 words_path = os.path.join(current_dir, 'words.pkl')
 classes_path = os.path.join(current_dir, 'classes.pkl')
+model_path = os.path.join(current_dir, 'chatbot_model.h5')
+
 #Leer archivo json
 with open(file_path, 'r', encoding='utf-8') as file:
     intents = json.load(file)
@@ -22,7 +24,9 @@ with open(file_path, 'r', encoding='utf-8') as file:
 # Cargar los archivos pickle
 words = pickle.load(open(words_path, 'rb'))
 classes = pickle.load(open(classes_path, 'rb'))
-model = tf.keras.models.load_model('/home/josequintero/Desktop/Quetzal-Bot/src/chatbot_model.h5')
+# Cargar el modelo
+model = tf.keras.models.load_model(model_path)
+#model = tf.keras.models.load_model('/home/josequintero/Desktop/Quetzal-Bot/src/chatbot_model.h5')
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
