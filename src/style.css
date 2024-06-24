@@ -51,3 +51,11 @@ span {
     text-align: center;
 }
 
+.stApp [data-testid="stToolbar"]{
+    display:none;
+}
+
+[data-testid="stChatMessage"]{
+    background-color: white;
+}
+
