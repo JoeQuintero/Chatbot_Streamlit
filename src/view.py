@@ -23,8 +23,6 @@ st.sidebar.page_link("https://www.upiicsa.ipn.mx/estudiantes/gestion-escolar.htm
 st.sidebar.page_link("https://www.google.com.mx/maps/place/UPIICSA+%E2%80%93+Unidad+Profesional+Interdisciplinaria+de+Ingenier%C3%ADa+y+Ciencias+Sociales+y+Administrativas+IPN/@19.395889,-99.0944224,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1fc2e3efc321b:0xabf8454acb3a3a99!8m2!3d19.395884!4d-99.0918475!16s%2Fg%2F1223ql0w?entry=ttu", label="Ubicación", icon="📍")  
 st.sidebar.page_link("https://www.upiicsa.ipn.mx/notiupiicsa.html", label="NOTIUPIICSA", icon="📰")  
 
-
-
 st.title("🐉 QUETZAL-BOT")
 
 # Agregar sección

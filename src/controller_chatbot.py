@@ -3,14 +3,15 @@ import json
 import pickle
 import numpy as np
 import nltk
+import tensorflow as tf
+from tensorflow import keras
 from nltk.stem import WordNetLemmatizer
-from keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('/home/josequintero/Desktop/Quetzal-Bot/src/intents.json', 'r', encoding='utf-8').read())
 words = pickle.load(open('/home/josequintero/Desktop/Quetzal-Bot/src/words.pkl', 'rb'))
 classes = pickle.load(open('/home/josequintero/Desktop/Quetzal-Bot/src/classes.pkl', 'rb'))
-model = load_model('/home/josequintero/Desktop/Quetzal-Bot/src/chatbot_model.h5')
+model = tf.keras.models.load_model('/home/josequintero/Desktop/Quetzal-Bot/src/chatbot_model.h5')
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
