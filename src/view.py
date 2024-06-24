@@ -7,6 +7,7 @@ import nltk
 
 # Descargar el recurso 'punkt' si no está disponible
 nltk.download('punkt')
+nltk.download('wordnet')
 
 #FRONT_END
 #------------------------------------------------------------------------------------------------
