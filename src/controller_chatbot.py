@@ -4,11 +4,20 @@ import pickle
 import numpy as np
 import nltk
 import tensorflow as tf
+import os
 from tensorflow import keras
 from nltk.stem import WordNetLemmatizer
 
+#Obtener el directorio del archivo actual
+current_dir = os.path.dirname(os.path.abspath(__file__))
+#Construir la ruta del directorio del archivo actual
+file_path = os.path.join(current_dir, 'intents.json')
+#Leer archivo json
+with open(file_path, 'r', encoding='utf-8') as file:
+    intents = json.load(file)
+
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open('/home/josequintero/Desktop/Quetzal-Bot/src/intents.json', 'r', encoding='utf-8').read())
+#intents = json.loads(open('/home/josequintero/Desktop/Quetzal-Bot/src/intents.json', 'r', encoding='utf-8').read())
 words = pickle.load(open('/home/josequintero/Desktop/Quetzal-Bot/src/words.pkl', 'rb'))
 classes = pickle.load(open('/home/josequintero/Desktop/Quetzal-Bot/src/classes.pkl', 'rb'))
 model = tf.keras.models.load_model('/home/josequintero/Desktop/Quetzal-Bot/src/chatbot_model.h5')
