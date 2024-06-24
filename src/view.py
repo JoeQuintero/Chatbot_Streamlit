@@ -1,15 +1,23 @@
 #Es necesario tener steamlit en el equipo
 import streamlit as st
+import os
 from controller_chatbot import predict_class, get_response, intents
 from streamlit_option_menu import option_menu
 
 #FRONT_END
 #------------------------------------------------------------------------------------------------
+# Obtener el directorio del script actual
+current_dir = os.path.dirname(__file__)
+
+# Construir la ruta relativa al archivo CSS
+css_path = os.path.join(current_dir, 'style.css')
+
+# Abrir y leer el archivo CSS
+with open(css_path) as f:
+    css = f.read()
+
 # Encabezado personalizado
 st.set_page_config(page_title="Quetzal-Bot", page_icon="🐉", layout="wide", initial_sidebar_state="expanded")
-
-with open('/home/josequintero/Desktop/Quetzal-Bot/src/style.css') as f:
-    css = f.read()
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
