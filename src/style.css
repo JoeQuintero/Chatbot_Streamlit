@@ -16,12 +16,8 @@ h1 {
   border-radius: 10px;
 }
 
-[class="st-emotion-cache-uhkwx6 ea3mdgi6"]{
-    background-color: #900C3F 
-}
-
 span {
-  color: #8c8a8a;
+  color: #777474;
   font-family: "Tahoma", sans-serif;
 }
 
@@ -34,7 +30,7 @@ span {
 }
 
 [data-testid="chatAvatarIcon-assistant"]{
-    background-color: #760a34;
+    background-color: #9b0e44d3;
 }
 
 
@@ -49,5 +45,25 @@ span {
 
 [data-testid="stChatMessage"]{
     background-color: white;
+}
+[data-testid="stAppViewContainer"]{
+    background-color: white;
+}
+[data-testid="stApp"]{
+    background-color: white;
+}
+
+p{
+    color: rgb(49, 45, 45);
+    font-family: "Times New Roman", Times, serif;
+}
+
+[data-testid="stChatInputTextArea"]{
+    background-color: white;
+}
+
+[data-testid="stBottomBlockContainer"]{
+    background-color: #900C3F ;
+    -webkit-text-fill-color: black
 }
 
