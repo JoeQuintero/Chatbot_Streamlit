@@ -10,6 +10,10 @@
 h1 {
   color: #8c8a8a;
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  background-color: #e9e4e4b0;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 [class="st-emotion-cache-uhkwx6 ea3mdgi6"]{
@@ -42,18 +46,6 @@ span {
 [data-testid="baseButton-headerNoPadding"] {
     background-color: #ffffff 
 } 
-
-.st-emotion-cache-1629p8f.e1nzilvr2 {
-    background-color: #e9e4e485; /* Cambia este color al que prefieras */
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-}
-
-.stApp [data-testid="stToolbar"]{
-    display:none;
-}
 
 [data-testid="stChatMessage"]{
     background-color: white;
