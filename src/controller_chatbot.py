@@ -55,7 +55,7 @@ def predict_class(sentence):
 
 def get_response(intents_list, intents_json):
     if not intents_list:
-        return "No hay intenciones disponibles"  # Manejo de caso donde intents_list está vacía
+        return "No puedo ayudarte con esa consulta"  # Manejo de caso donde intents_list está vacía
     
     responses = []
     
