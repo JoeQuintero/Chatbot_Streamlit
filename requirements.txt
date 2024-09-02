@@ -1,7 +1,21 @@
-keras
-nltk
-numpy
-streamlit
-streamlit_option_menu
-tensorflow
+1. Instalar con terminal de VS_Code:
+    NLTK - pip install --user -U nltk
+    Keras - pip install --upgrade keras
+    Tensorflow - pip install tensorflow
+    Streamlit_Option_Menu - pip install streamlit-option-menu
 
+2. Ejecutar con VS_Code
+    Archivo de install_requirements.py para importar todas las librerias previamente instaladas.
+
+3. Eliminar 
+    Archivos de la carpeta \src: chatbot_model.h5, classes.pkl y words.pkl
+
+4. Ejecutar archivos con VS_Code en el siguiente orden:
+    4.1 training.py 
+        (Es recomendable estar úbicado en la ruta \Quetzal-Bot\src y ejecutar el archivo. Una vez ejecutado, se crearán los archivos chatbot_model.h5, classes.pkl y words.pkl en la carpeta \src nuevamente)
+    4.2 controller_chatbot
+
+5. Ejecutar con terminal de VS_Code:
+    streamlit run view.py
+
+    Ctrl + C para detener el programa

@@ -1,134 +1,268 @@
 {
-    "intents":[
-        {
-            "tag":"saludo",
-            "patterns":[
-                "Hola", 
-                "Buenos días", 
-                "Buenas Tardes"
-            ],
-            "responses":[
-                "¡Hola!, ¿Cómo puedo ayudarte hoy?", 
-                "¿Qué tal?, ¿Qué es lo que necesitas?"
-            ]
-        },
-        {
-            "tag":"saludo_2",
-            "patterns":[
-                "¿Qué tal?", 
-                "Buenos"
-            ],
-            "responses":[
-                "¡Hola!, ¿Cómo puedo ayudarte hoy?", 
-                "¿Qué tal?, ¿Qué es lo que necesitasaaas?"
-            ]
-        },
-        {
-            "tag":"despedida",
-            "patterns":[
-                "Adiós", 
-                "Hasta luego", 
-                "bye"
-            ],
-            "responses":[
-                "Adiós, espero vernos pronto", 
-                "Hasta luego", 
-                "Ciao"
-            ]
-        },
-        {
-            "tag":"presentacion",
-            "patterns":[
-              "Soy Bard",
-              "Hola, soy Bard",
-              "Me presento, soy Bard"
-            ],
-            "responses":[
-              "¡Hola! Soy Bard, tu chatbot de inteligencia artificial. Estoy aquí para ayudarte en lo que necesites. ¿En qué puedo servirte hoy?",
-              "Encantado de conocerte. Soy Bard, un chatbot entrenado para ser informativo y completo. ¿Qué te gustaría saber o hacer hoy?",
-              "¡Hola! Soy Bard, tu asistente virtual. ¿Cómo puedo ayudarte a hacer tu día más fácil?"
-            ]
-        },
-        {
-            "tag":"agradecimiento",
-            "patterns":[
-              "Gracias",
-              "Muchas gracias",
-              "Te agradezco"
-            ],
-            "responses":[
-              "¡De nada! Me alegra poder ayudar.",
-              "No hay problema, estoy aquí para servirte.",
-              "¡Es un placer! Avísame si necesitas algo más."
-            ]
-        },
-        {
-            "tag":"disculpa",
-            "patterns":[
-              "Lo siento",
-              "Disculpa",
-              "Perdón"
-            ],
-            "responses":[
-              "No te preocupes, todos cometemos errores. ¿Cómo puedo ayudarte a solucionarlo?",
-              "Lo siento mucho por las molestias. Haré todo lo posible para corregirlo.",
-              "No hay problema, estoy aquí para ayudarte. ¿Qué te gustaría hacer ahora?"
-            ]
-        },
-        {
-            "tag":"autocritica",
-            "patterns":[
-              "No lo sé",
-              "No estoy seguro",
-              "No puedo ayudarte con eso"
-            ],
-            "responses":[
-              "Todavía estoy aprendiendo y no siempre tengo todas las respuestas. ¿Te gustaría que intentara buscar más información?",
-              "Lo siento, pero aún no he sido entrenado para manejar ese tipo de solicitud. ¿Te gustaría que intentara algo diferente?",
-              "Estoy en ello, pero todavía necesito más datos para poder ayudarte con eso. ¿Podrías proporcionarme más información?"
-            ]
-        },
-        {
-            "tag":"definicion",
-            "patterns":[
-              "¿Qué significa [palabra]?",
-              "Define [palabra]",
-              "Significado de [palabra]"
-            ],
-            "responses":[
-              "[Palabra] significa [definición]. ¿Hay algo más en lo que pueda ayudarte?",
-              "Según mi conocimiento, [palabra] se define como [definición]. ¿Te gustaría saber más sobre [palabra]?",
-              "La palabra [palabra] tiene varios significados. ¿Podrías especificar en qué contexto la estás utilizando para poder darte una definición más precisa?"
-            ]
-        },
-        {
-            "tag":"explicacion",
-            "patterns":[
-              "¿Cómo funciona [proceso]?",
-              "Explica [proceso]",
-              "Dime cómo funciona [cosa]"
-            ],
-            "responses":[
-              "[Proceso] funciona de la siguiente manera: [explicación detallada del proceso]. ¿Hay algo más que te gustaría saber sobre [proceso]?",
-              "[Cosa] funciona así: [explicación detallada de la cosa]. ¿Te gustaría saber más sobre un aspecto específico de [cosa]?",
-              "Para explicarte mejor [proceso], necesito más información sobre el contexto en el que lo estás utilizando. ¿Podrías proporcionarme más detalles?"
-            ]
-        },
-        {
-            "tag":"ejemplos",
-            "patterns":[
-              "Dame un ejemplo de [uso]",
-              "Ejemplos de [uso]",
-              "¿Cómo se usa [cosa]?"
-            ],
-            "responses":[
-              "Aquí hay un ejemplo de cómo se puede usar [uso]: [ejemplo detallado]. ¿Te gustaría ver más ejemplos?",
-              "Un ejemplo de cómo se puede usar [cosa] es [ejemplo detallado]. ¿Hay alguna otra aplicación de [cosa] que te gustaría conocer?",
-              "Para darte ejemplos más relevantes, necesito saber en qué contexto quieres usar [cosa]. ¿Podrías proporcionarme más información?"
-            ]
-        }
-
-    ]
+  "intents":[
+      {
+          "tag":"saludo",
+          "patterns":[
+              "Hola", 
+              "Buenos días", 
+              "Buenas tardes", 
+              "Qué tal"
+          ],
+          "responses":[
+              "¡Hola! Bienvenido a UPIICSA, ¿en qué puedo ayudarte hoy?", 
+              "Buenos días, ¿cómo puedo ayudarte?",
+              "Buenas tardes, ¿qué necesitas saber sobre UPIICSA?"
+          ]
+      },
+      {
+          "tag":"afirmacion",
+          "patterns":[
+              "Sí",
+              "Si",
+              "si",
+              "sí"
+          ],
+          "responses":[
+              "De acuerdo",
+              "Vale"
+          ]
+      },
+      {
+        "tag":"negacion",
+        "patterns":[
+            "No",
+            "no"
+        ],
+        "responses":[
+            "De acuerdo",
+            "Vale"
+        ]
+      },
+      {
+          "tag":"informacion_general",
+          "patterns":[
+              "Información general",
+              "Cuéntame sobre UPIICSA",
+              "Qué es UPIICSA"
+          ],
+          "responses":[
+              "UPIICSA es la Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas, parte del Instituto Politécnico Nacional (IPN). Ofrecemos diversas carreras y servicios para los estudiantes.",
+              "UPIICSA es una institución del IPN que ofrece programas en ingeniería y ciencias sociales y administrativas.",
+              "La UPIICSA es una unidad académica del IPN enfocada en la ingeniería y ciencias sociales y administrativas."
+          ]
+      },
+      {
+          "tag":"carreras",
+          "patterns":[
+              "Qué carreras ofrecen",
+              "Carreras disponibles",
+              "Programas de estudio"
+          ],
+          "responses":[
+              "En UPIICSA ofrecemos las siguientes carreras: Ingeniería en Informática, Ingeniería Industrial, Ingeniería en Transporte, Licenciatura en Ciencias de la Informática, Ingeniería Ferroviaria y Licenciatura en Administración Industrial,",
+              "Las carreras disponibles en UPIICSA incluyen Ingeniería en Informática, Licenciatura en Ciencias de la Informática, Ingeniería Industrial, Ingeniería en Transporte, Ingeniería Ferroviaria y Licenciatura en Administración Industrial,",
+              "Ofrecemos programas en Ingeniería en Informática, Ingeniería Industrial, Licenciatura en Ciencias de la Informática, Ingeniería Ferroviaria, Licenciatura en Administración Industrial, Ingeniería en Transporte y Ciencias de la Informática."
+          ]
+      },
+      {
+          "tag":"inscripciones",
+          "patterns":[
+              "Cómo me inscribo",
+              "Proceso de inscripción",
+              "Requisitos de inscripción"
+          ],
+          "responses":[
+              "Para inscribirte en UPIICSA, debes cumplir con los requisitos de admisión del IPN, completar el examen de ingreso y seguir el proceso de inscripción en línea. Puedes encontrar más detalles en el sitio web oficial del IPN.",
+              "El proceso de inscripción incluye la presentación de documentos, completar el examen de ingreso y registrarte en el sistema del IPN. Visita el sitio web del IPN para más información.",
+              "Para inscribirte, necesitas cumplir con los requisitos de admisión, presentar el examen de ingreso y seguir el proceso en línea. Todos los detalles están disponibles en el sitio web del IPN."
+          ]
+      },
+      {
+          "tag":"becas",
+          "patterns":[
+              "Ofrecen becas",
+              "Becas disponibles",
+              "Cómo obtener una beca"
+          ],
+          "responses":[
+              "Sí, en UPIICSA ofrecemos varias becas para estudiantes de nuevo ingreso. Puedes encontrar información sobre los tipos de becas y cómo solicitarlas en el sitio web del IPN.",
+              "Hay varias becas disponibles para estudiantes de nuevo ingreso en UPIICSA. Visita el sitio web del IPN para más detalles sobre los requisitos y el proceso de solicitud.",
+              "Ofrecemos diferentes tipos de becas para apoyar a nuestros estudiantes. Para obtener más información sobre las becas disponibles y cómo solicitarlas, consulta el sitio web del IPN."
+          ]
+      },
+      {
+          "tag":"horarios",
+          "patterns":[
+              "Cuál es el horario de clases",
+              "Horarios de clases",
+              "Cuándo son las clases"
+          ],
+          "responses":[
+              "Los horarios de clases varían según la carrera y el semestre. Puedes consultar los horarios específicos en la plataforma de gestión escolar del IPN o contactar a tu coordinador de carrera.",
+              "Los horarios de clases se publican al inicio de cada semestre en la plataforma de gestión escolar del IPN. Asegúrate de revisar la plataforma para obtener los horarios específicos de tus cursos.",
+              "Para conocer los horarios de tus clases, revisa la plataforma de gestión escolar del IPN o contacta a tu coordinador de carrera. Los horarios varían según la carrera y el semestre."
+          ]
+      },
+      {
+          "tag":"calendario_escolar",
+          "patterns":[
+              "Calendario escolar",
+              "Fechas importantes",
+              "Cuándo son las vacaciones"
+          ],
+          "responses":[
+              "El calendario escolar de UPIICSA se publica en el sitio web del IPN y contiene todas las fechas importantes, incluyendo inicio y fin de semestre, periodos de exámenes y vacaciones.",
+              "Puedes consultar el calendario escolar en el sitio web del IPN para conocer todas las fechas importantes del semestre, como inicio de clases, exámenes y periodos de vacaciones.",
+              "El calendario escolar incluye fechas clave como el inicio y fin de clases, periodos de exámenes y vacaciones. Visita el sitio web del IPN para más detalles."
+          ]
+      },
+      {
+          "tag":"contacto",
+          "patterns":[
+              "Cómo contacto a la escuela",
+              "Información de contacto",
+              "Teléfono de UPIICSA"
+          ],
+          "responses":[
+              "Puedes contactar a UPIICSA a través del teléfono (55) 5729 6000 o por correo electrónico a contacto@upiicsa.ipn.mx. También puedes visitar nuestra página web para más información.",
+              "Para contactar a UPIICSA, llama al (55) 5729 6000 o envía un correo electrónico a contacto@upiicsa.ipn.mx. Encuentra más información en nuestro sitio web.",
+              "Puedes comunicarte con nosotros llamando al (55) 5729 6000 o enviando un correo electrónico a contacto@upiicsa.ipn.mx. Visita nuestro sitio web para más detalles."
+          ]
+      },
+      {
+          "tag":"servicios",
+          "patterns":[
+              "Qué servicios ofrecen",
+              "Servicios para estudiantes",
+              "Apoyo estudiantil"
+          ],
+          "responses":[
+              "UPIICSA ofrece una variedad de servicios para estudiantes, incluyendo asesoría académica, bibliotecas, laboratorios, y apoyo psicológico. Visita nuestro sitio web para más información.",
+              "Ofrecemos servicios como asesoría académica, bibliotecas, laboratorios, y apoyo psicológico para nuestros estudiantes. Consulta nuestro sitio web para detalles específicos.",
+              "Nuestros servicios incluyen asesoría académica, bibliotecas, laboratorios, y apoyo psicológico. Encuentra más información sobre estos servicios en nuestro sitio web."
+          ]
+      },
+      {
+          "tag":"orientacion_academica",
+          "patterns":[
+              "Necesito orientación académica",
+              "Ayuda con mi carrera",
+              "Consejería académica"
+          ],
+          "responses":[
+              "Puedes obtener orientación académica contactando a los consejeros académicos de UPIICSA. Ellos te ayudarán a planificar tu trayectoria académica y resolver dudas sobre tu carrera.",
+              "Para recibir orientación académica, puedes acudir a la oficina de consejería de UPIICSA o enviar un correo electrónico a consejeria@upiicsa.ipn.mx.",
+              "Nuestros consejeros académicos están disponibles para ayudarte con cualquier duda o problema relacionado con tu carrera. Visita nuestra oficina de consejería para más información."
+          ]
+      },
+      {
+          "tag":"actividades_extracurriculares",
+          "patterns":[
+              "Actividades extracurriculares",
+              "Deportes y clubes",
+              "Qué actividades hay fuera de clase"
+          ],
+          "responses":[
+              "UPIICSA ofrece una variedad de actividades extracurriculares, incluyendo deportes, clubes estudiantiles, y talleres culturales. Puedes obtener más información en la oficina de actividades extracurriculares.",
+              "Hay muchas actividades extracurriculares disponibles en UPIICSA, desde deportes hasta clubes académicos y culturales. Visita nuestra oficina de actividades para inscribirte.",
+              "Ofrecemos una amplia gama de actividades extracurriculares para enriquecer tu experiencia universitaria. Consulta el calendario de actividades en nuestra página web."
+          ]
+      },
+      {
+          "tag":"transporte",
+          "patterns":[
+              "Cómo llegar a UPIICSA",
+              "Transporte a UPIICSA",
+              "Rutas de transporte"
+          ],
+          "responses":[
+              "UPIICSA está ubicada en la Ciudad de México, cerca de varias líneas de transporte público. Puedes llegar en metro, autobús o transporte privado. Consulta nuestro sitio web para más detalles sobre las rutas.",
+              "Para llegar a UPIICSA, puedes tomar el metro línea 5 y bajar en la estación Instituto del Petróleo, o usar las rutas de autobús que pasan cerca. Revisa nuestro sitio web para las opciones de transporte.",
+              "Hay varias opciones de transporte público y privado para llegar a UPIICSA. Consulta el mapa interactivo en nuestra página web para planificar tu ruta."
+          ]
+      },
+      {
+          "tag":"documentos",
+          "patterns":[
+              "Qué documentos necesito",
+              "Documentación requerida",
+              "Papeles para la inscripción"
+          ],
+          "responses":[
+              "Para la inscripción, necesitarás documentos como tu acta de nacimiento, certificado de bachillerato, CURP, identificación oficial y fotografías. Consulta la lista completa en el sitio web del IPN.",
+              "Los documentos requeridos para la inscripción incluyen acta de nacimiento, certificado de estudios, CURP y fotos tamaño infantil. Revisa el sitio web del IPN para más detalles.",
+              "Necesitarás varios documentos para completar tu inscripción, incluyendo tu acta de nacimiento y certificado de bachillerato. Encuentra la lista completa en el sitio web del IPN."
+          ]
+      },
+      {
+          "tag":"admision",
+          "patterns":[
+              "Cómo es el proceso de admisión",
+              "Requisitos de admisión",
+              "Ingreso a UPIICSA"
+          ],
+          "responses":[
+              "El proceso de admisión a UPIICSA incluye presentar un examen de ingreso, cumplir con los requisitos académicos y completar la inscripción en línea. Visita el sitio web del IPN para más información.",
+              "Para ser admitido en UPIICSA, necesitas presentar el examen de ingreso del IPN, cumplir con los requisitos de promedio y completar el proceso de inscripción. Consulta el sitio web del IPN.",
+              "El proceso de admisión incluye un examen de ingreso y varios requisitos académicos. Encuentra todos los detalles sobre cómo ingresar a UPIICSA en el sitio web del IPN."
+          ]
+      },
+      {
+          "tag":"agradecimiento",
+          "patterns":[
+            "Gracias",
+            "Muchas gracias",
+            "Te agradezco"
+          ],
+          "responses":[
+            "¡De nada! Me alegra poder ayudar.",
+            "No hay problema, estoy aquí para servirte.",
+            "¡Es un placer! Avísame si necesitas algo más."
+          ]
+      },
+      {
+          "tag":"disculpa",
+          "patterns":[
+            "Lo siento",
+            "Disculpa",
+            "Perdón"
+          ],
+          "responses":[
+            "No te preocupes, todos cometemos errores. ¿Cómo puedo ayudarte a solucionarlo?",
+            "Lo siento mucho por las molestias. Haré todo lo posible para corregirlo.",
+            "No hay problema, estoy aquí para ayudarte. ¿Qué te gustaría hacer ahora?"
+          ]
+      },
+      {
+        "tag":"despedida",
+        "patterns":[
+            "Adiós", 
+            "Hasta luego", 
+            "bye",
+            "Adios",
+            "adios",
+            "adiós"
+        ],
+        "responses":[
+            "Adiós, espero vernos pronto", 
+            "Hasta luego", 
+            "Ciao"
+        ]
+      },
+      {
+        "tag":"Creacióon",
+        "patterns":[
+            "Quién te creó?",
+            "quién te creó?",
+            "quien te creo?", 
+            "quien te creo" 
+        ],
+        "responses":[
+            "Fuí creado por un grupo de estudiantes de la UPIICSA: Quintero Gómez José Laureano (Propietario del repositorio en GitHub), Medina Méndez Juan Manuel y Rosales Jiménez Bryan"
+        ]
+      }
+  ]
 }
+
 
   

@@ -45,7 +45,8 @@ def bag_of_words(sentence):
 def predict_class(sentence):
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]))[0]
-    ERROR_THRESHOLD = 0.5
+    #Define un valor umbral que en muchos casos, es el punto de corte para determinar si una predicción es lo suficientemente confiable como para ser aceptada
+    ERROR_THRESHOLD = 0.8
     results = [[i,r] for i, r in enumerate (res) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
@@ -55,7 +56,7 @@ def predict_class(sentence):
 
 def get_response(intents_list, intents_json):
     if not intents_list:
-        return "No hay intenciones disponibles"  # Manejo de caso donde intents_list está vacía
+        return "No puedo ayudarte con esa consulta"  # Manejo de caso donde intents_list está vacía
     
     responses = []
     

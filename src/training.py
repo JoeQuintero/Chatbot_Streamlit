@@ -13,8 +13,9 @@ import pickle
 import numpy as np
 import tensorflow as tf
 import random
+import os
 
-data_file = open('/home/josequintero/Desktop/Quetzal-Bot/src/intents.json', 'r', encoding='utf-8').read()
+data_file = open('intents.json', 'r', encoding='utf-8').read()
 intents = json.loads(data_file)
 
 lemmatizer = WordNetLemmatizer()
