@@ -1,6 +1,7 @@
 keras
 nltk
 numpy
+punkt_tab
 streamlit
 streamlit_option_menu
 tensorflow
