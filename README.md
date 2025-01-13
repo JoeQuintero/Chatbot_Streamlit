@@ -8,8 +8,8 @@ El proyecto de software llamado Quetzal-Bot se enfoca en la atención constante 
 
 El repositorio contiene los archivos necesarios para testear el programa. 
 
-## Versión de PC:
+### Versión de PC:
 <a href=""><img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/screen1.png" style="height: 100%; width:60%;"/></a>
-## Versión móvil:
+### Versión móvil:
 <a href=""><img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/screen2.jpg" style="height: 25%; width:20%;"/></a>
 <a href=""><img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/screen3.jpg" style="height: 25%; width:20%;"/></a>
