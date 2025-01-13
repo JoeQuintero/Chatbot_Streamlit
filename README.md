@@ -1,4 +1,4 @@
-<a href=""><img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/chatbot.png" style="height: 12%; width:12%;"/></a>
+<a href=""><img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/chatbot.png" style="height: 15%; width:15%;"/></a>
 ## Quetzal-Bot
 ### Chatbot de atención escolar para estudiantes de nuevo ingreso en la UPIICSA, IPN.
 
@@ -7,3 +7,9 @@ Este proyecto es desarrollado por estudiantes de la unidad académica antes menc
 El proyecto de software llamado Quetzal-Bot se enfoca en la atención constante a los estudiantes de la UPIICSA, la disponibilidad ininterrumpida de un chatbot garantiza que las dudas de los estudiantes sean atendidas sin demoras. Esto aumenta la satisfacción y mejora la experiencia de los estudiantes, así como la eficiencia administrativa ya que libera tiempo valioso para tareas académicas que requieren atención humana como la aclaración de dudas o la explicación para la solicitud de un trámite.
 
 El repositorio contiene los archivos necesarios para testear el programa. 
+
+## Versión de PC:
+<a href=""><img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/screen1.png" style="height: 100%; width:60%;"/></a>
+## Versión móvil:
+<a href=""><img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/screen2.jpg" style="height: 25%; width:20%;"/></a>
+<a href=""><img src="https://github.com/JoeQuintero/Chatbot_Streamlit/blob/main/screen3.jpg" style="height: 25%; width:20%;"/></a>
